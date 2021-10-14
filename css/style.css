@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-color: rgb(221, 245, 247);
+    margin: 0px;
+}
+
+.cabecalho{
+    background-color: black; 
+    margin-top: 0px;
+    border: black;
+    border-width: 1px;
+    border-style: solid;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    height: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    
+    
+}
+.content-box{
+
+    color: white;
+    position: relative;
+    margin-top: 50px;
+    text-shadow: 0.1em 0.1em 0.2em white;  
+
+}
+.content-box-text{
+
+    font-size: 50px  ;
+    padding:0;
+    justify-content: space-around;
+    text-align: center; 
+    
+}    
+    
+.menu a{
+    padding: 10px;
+    color: white;
+    
+}
+.menu a:hover{
+    color: grey;
+
+
+}
+.menu {
+    display: flex; /* layout usando flex */
+    justify-content: space-around; /* centraliza horizontalmente e adiciona 
+    espaços entre os elementos*/
+    align-items: center; /* alinhamento vertical */
+    flex-direction: column; /* vertical - um elemento sobre o outro. */
+    height: 60px auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-left: 0;
+    border-right: 0;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    background-color:#15334F
+
+}
+
+ .section1{
+
+    background-color:#1C1C1C ;
+    height: 1200px auto;
+    flex-direction: column;
+    width:auto;
+
+}
+
+.filmes-content{
+    height: 30px;
+    position: relative;
+    border-color: white;
+    border-width: 1px;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+    background-color: #15334f;
+}
+
+.categor-filmes{
+    position: relative;
+    text-align: center;
+    padding: 3px ;
+    margin: auto;      
+}
+
+.categor-filmes th {
+    width: 150px ;
+    
+}
+.categor-filmes a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.categor-filmes a:hover{
+    color: gray;
+}
+.link-imagem1{
+
+    width: 220px;
+    height: 300px;
+    padding: 10px;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 65px;
+    margin-bottom: 50px;
+
+}
+
+.corpo {
+    display:flex;
+    flex-direction: column; /* as DIVs Conteudo1, Conteudo2 e Conteudo3 ficarão 
+    umas sobre as outras quando dispositivo com tela estreita.*/
+    flex-wrap: wrap; /* Caso o conteúdo, no caso as DIVs Conteudo1, Conteudo2 e 
+    Conteudo3, não caiba em uma linha, vai automaticamente para a próxima. Para uso 
+    em dispositivos de tela grande. */
+}
+
+.titulo-type{
+
+    height: 30px;
+    width: auto;
+    background-color: #1C1C1C;
+    border-style: solid;
+    
+    border-left: 0;
+    border-right: 0;
+    border-width: 1px;
+}
+.titulo-text{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 3px;
+    font-size: 20px;
+}
+.row {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    
+  }
+
+  .card {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 10px ;
+    margin: 5px auto ;
+    margin-left: 8px;
+    width: 240px;
+    transition: all 0.3s ease-out;
+    text-align: center;
+    background-color: #15334f;
+    border-style: solid;
+    border-color: black ;
+
+  }
+
+.text{
+    color: white
+}
+  .card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+   
+  .card p {
+    color: #a3a5ae;
+    font-size: 18px;
+  }
+   
+  .image {
+    position: relative;
+    width: 220px;
+    height: 300px;
+    padding: 0;
+    margin:0
+  }
+  
+
+.rodape{
+
+    background-color: black;
+    
+   
+   
+    height: 300px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.rodape p{
+    text-align: right;
+    margin-right: 50px;
+    font-size: 30px;
+    
+}
+
+@media only screen and (min-width: 700px)
+{
+    .menu {
+        flex-direction: row;   
+    }
+    
+    }
+    .section1{
+        flex-direction: column;
+    }
+    .picture{
+         width: 30%;
+         height: 30%;
+    }
+@media only screen and ( max-width:700px)
+{   
+    .content-box{
+        
+        font-size: 30px;
+
+    }
+    .menu a{
+        border: solid;
+        border-width: 1px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
