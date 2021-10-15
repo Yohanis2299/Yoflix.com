@@ -76,7 +76,7 @@ body {
     background-color:#1C1C1C ;
     height: 1200px auto;
     flex-direction: column;
-    width:100%;
+    width: 1600px auto;
 
 }
 
@@ -163,7 +163,7 @@ body {
     box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
     padding: 10px ;
     margin: 5px auto ;
-    margin-left: 8px;
+    margin: 0 auto;
     width: 240px;
     transition: all 0.3s ease-out;
     text-align: center;
@@ -212,6 +212,20 @@ body {
     font-size: 30px;
     
 }
+.lançamento{
+    height: 400px auto;
+    width: 100%;
+    background-color: #15334F;
+    
+   
+}
+.videovenon{
+    position: relative;
+    margin-right: auto;
+    padding: 10px;
+    margin-top: 0;
+       
+}
 
 @media only screen and (min-width: 700px)
 {
@@ -227,6 +241,7 @@ body {
          width: 30%;
          height: 30%;
     }
+    
 @media only screen and ( max-width:700px)
 {   
     .content-box{
@@ -240,5 +255,17 @@ body {
         width: 100%;
         text-align: center;
     }
+    .videovenon{
+        width: 100%;
+    }
+}
+@media only screen and ( max-width:500px)
+{
+    .card .image {
+        width: 100%;
+        
+    }
+    
+    
 }
 
