@@ -215,8 +215,9 @@ body {
 .lançamento{
     height: 400px auto;
     width: 100%;
-    background-color: #15334F;
-    
+    background: black url("/img/venon.jpg") no-repeat center right ;
+    background-size:  100%;
+
    
 }
 .videovenon{
@@ -264,6 +265,10 @@ body {
     .card .image {
         width: 100%;
         
+    
+    }
+    .lançamento{
+        background-size: 500px;
     }
     
     
