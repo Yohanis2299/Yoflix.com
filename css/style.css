@@ -213,19 +213,26 @@ body {
     
 }
 .lançamento{
-    height: 400px auto;
+    height: 400px ;
     width: 100%;
-    background: black url("/img/venon.jpg") no-repeat center right ;
+    /*background: black url("/img/venon.jpg") no-repeat center right ;/*/
     background-size:  100%;
 
    
 }
 .videovenon{
     position: relative;
-    margin-right: auto;
+    margin-right:auto;
     padding: 10px;
     margin-top: 0;
+    z-index: 1;
        
+}
+.imgvenon{
+    
+    width: 100%;
+    z-index: -1;
+
 }
 
 @media only screen and (min-width: 700px)
@@ -243,7 +250,7 @@ body {
          height: 30%;
     }
     
-@media only screen and ( max-width:700px)
+@media only screen and ( max-width:800px)
 {   
     .content-box{
         
@@ -260,7 +267,7 @@ body {
         width: 100%;
     }
 }
-@media only screen and ( max-width:500px)
+@media only screen and ( max-width:800px)
 {
     .card .image {
         width: 100%;
@@ -270,7 +277,19 @@ body {
     .lançamento{
         background-size: 500px;
     }
-    
-    
+      
 }
+@media only screen and (min-width: 900px)
+    {
+    .row{
+        flex-wrap: nowrap;
+      
+    }
+    .card .image{
+        width: 100%;
+    }
+
+ }
+    
+
 
