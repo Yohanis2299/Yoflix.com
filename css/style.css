@@ -13,7 +13,7 @@ body {
 .cabecalho{
     background-color: black; 
     margin-top: 0px;
-    margin-left: 0;
+    margin-left: 120px;
     border: white;
     border-width: 1px;
     border-left: 0;
@@ -64,7 +64,7 @@ body {
     border-color: white;
     border-left: 0;
     border-right: 0;
-    
+    margin-left: 120px;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-size: 20px;
@@ -243,18 +243,18 @@ body {
 }
 .videovenon{
     position: relative;
-    margin-right:auto;
+    margin-right: auto ;
     padding: 0px;
     margin-top: 0;
     z-index: 1;
-    margin-left: 120px;
+    margin-left: 0px;
        
 }
 .imgvenon{
 
-    position: absolute;
+    position: relative;
     margin-left: 0px;
-    padding-left: -10px;
+    padding-left: 10px;
     padding-top: 0px;
     padding-bottom: 0px;
     padding-right: 0;
@@ -291,9 +291,7 @@ body {
         width: 100%;
         text-align: center;
     }
-    .videovenon{
-        width: 100%;
-    }
+    
 }
 @media only screen and ( max-width:800px)
 {
@@ -318,14 +316,15 @@ body {
     }
 
  }
- @media only screen and ( max-width:800px)
+ @media only screen and ( max-width:1000px)
 {
     .imgvenon{
-        width: 90%;
-        margin-left: 120px;
-        flex-wrap: wrap;
-       
-        
+        width: 100%;
+        flex-direction: column;
+    }
+    .videovenon{
+        width: 100%;
+        padding-right: 120px;
     }
 
 }
