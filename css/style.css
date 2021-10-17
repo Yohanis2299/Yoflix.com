@@ -5,7 +5,7 @@
 
 body {
     
-    background-color: rgb(221, 245, 247);
+    background-color: black;
     margin: 0px;
     width: 100%;
 }
@@ -13,9 +13,11 @@ body {
 .cabecalho{
     background-color: black; 
     margin-top: 0px;
-    margin-left: 120px;
-    border: black;
+    margin-left: 0;
+    border: white;
     border-width: 1px;
+    border-left: 0;
+    border-right: 0ch;
     border-style: solid;
     padding-bottom: 20px;
     padding-top: 40px;
@@ -62,11 +64,13 @@ body {
     border-color: white;
     border-left: 0;
     border-right: 0;
-    margin-left: 120px;
+    
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-size: 20px;
-    background-color:#15334F
+    background-color:#15334F;
+    
+    
 
 }
 
@@ -81,10 +85,10 @@ body {
 }
 
 .filmes-content{
-    height: 100%;
+    height:100%;
     position: fixed ;
     width: 120;
-    z-index: 999px;
+    z-index: 0;
     left: 0%;
     right: 0%;
     top: 0;
@@ -95,34 +99,38 @@ body {
     border-right: 1;
     border-style: solid;
     background-color: #0C152A;
+    
    
 }
 
 .categor-filmes{
     position: relative;
     text-align:left;
-    padding-top: 10px ;
+    padding-top: 150px ;
+    padding-bottom: 200px;
     padding-left: 2px;
-    margin: auto;       
+    margin: auto;    
 }
 
 .categor-filmes tr  {
     height: 50px ;
     
     
+    
 }
-.categor-filmes th{
-  
 
-}
+
+
 .categor-filmes a{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-size: 20px;
+    
 }
 .categor-filmes a:hover{
     color: gray;
+    
 }
 .link-imagem1{
 
@@ -215,13 +223,10 @@ body {
 .rodape{
 
     background-color: black;
-    
-   
-   
-    height: 300px;
-    margin-top: 10px;
+    height: 200px;
+    margin-left: 120px;
     text-align: left;
-}
+}   
 
 .rodape p{
     text-align: right;
@@ -230,25 +235,31 @@ body {
     
 }
 .lançamento{
-    height: 400px ;
+    height: 420px ;
     width: 100%;
-    /*background: black url("/img/venon.jpg") no-repeat center right ;/*/
-    background-size:  100%;
-
+    background-color: black;
+    margin-left: 120px;
    
 }
 .videovenon{
     position: relative;
     margin-right:auto;
-    padding: 10px;
+    padding: 0px;
     margin-top: 0;
     z-index: 1;
+    margin-left: 120px;
        
 }
 .imgvenon{
+
+    position: absolute;
+    margin-left: 0px;
+    padding-left: -10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0;
+    width: 700px;
     
-    width: 100%;
-    z-index: -1;
 
 }
 
@@ -289,11 +300,11 @@ body {
     .card .image {
         width: 100%;
         
-    
     }
     .lançamento{
         background-size: 500px;
     }
+    
       
 }
 @media only screen and (min-width: 1000px)
@@ -307,6 +318,14 @@ body {
     }
 
  }
-    
+ @media only screen and ( max-width:800px)
+{
+    .imgvenon{
+        width: 90%;
+        margin-left: 120px;
+        flex-wrap: wrap;
+       
+        
+    }
 
-
+}
