@@ -13,11 +13,12 @@ body {
 .cabecalho{
     background-color: black; 
     margin-top: 0px;
+    margin-left: 120px;
     border: black;
     border-width: 1px;
     border-style: solid;
     padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 40px;
     height: 200px;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
@@ -48,8 +49,6 @@ body {
 }
 .menu a:hover{
     color: grey;
-
-
 }
 .menu {
     display: flex; /* layout usando flex */
@@ -63,7 +62,7 @@ body {
     border-color: white;
     border-left: 0;
     border-right: 0;
-    
+    margin-left: 120px;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-size: 20px;
@@ -77,35 +76,50 @@ body {
     height: 1200px auto;
     flex-direction: column;
     width: 1600px auto;
+    margin-left: 120px;
 
 }
 
 .filmes-content{
-    height: 30px;
-    position: relative;
+    height: 100%;
+    position: fixed ;
+    width: 120;
+    z-index: 999px;
+    left: 0%;
+    right: 0%;
+    top: 0;
+    overflow:hidden;
     border-color: white;
     border-width: 1px;
     border-left: 0;
-    border-right: 0;
+    border-right: 1;
     border-style: solid;
-    background-color: #15334f;
+    background-color: #0C152A;
+   
 }
 
 .categor-filmes{
     position: relative;
-    text-align: center;
-    padding: 3px ;
-    margin: auto;      
+    text-align:left;
+    padding-top: 10px ;
+    padding-left: 2px;
+    margin: auto;       
 }
 
-.categor-filmes th {
-    width: 150px ;
+.categor-filmes tr  {
+    height: 50px ;
     
+    
+}
+.categor-filmes th{
+  
+
 }
 .categor-filmes a{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    font-size: 20px;
 }
 .categor-filmes a:hover{
     color: gray;
@@ -119,6 +133,7 @@ body {
     margin-top: 50px;
     margin-left: 65px;
     margin-bottom: 50px;
+    
 
 }
 
@@ -177,7 +192,7 @@ body {
     color: white
 }
   .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
     cursor: pointer;
   }
    
@@ -191,7 +206,9 @@ body {
     width: 220px;
     height: 300px;
     padding: 0;
-    margin:0
+    margin:0;
+    
+   
   }
   
 
@@ -279,7 +296,7 @@ body {
     }
       
 }
-@media only screen and (min-width: 900px)
+@media only screen and (min-width: 1000px)
     {
     .row{
         flex-wrap: nowrap;
