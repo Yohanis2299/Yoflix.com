@@ -226,6 +226,7 @@ body {
     height: 200px;
     margin-left: 120px;
     text-align: left;
+    width: 1600px auto;
 }   
 
 .rodape p{
@@ -236,7 +237,7 @@ body {
 }
 .lançamento{
     height: 420px ;
-    width: 100%;
+    width: 1600px auto;
     background-color: black;
     margin-left: 120px;
    
