@@ -1,15 +1,12 @@
 * {
     box-sizing: border-box;
-    
-}
 
+}
 body {
-    
     background-color: black;
     margin: 0px;
     width: 100%;
 }
-
 .cabecalho{
     background-color: black; 
     margin-top: 0px;
@@ -23,31 +20,23 @@ body {
     padding-top: 40px;
     height: 200px;
     font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    
-    
+    position: relative;  
 }
 .content-box{
-
     color: white;
     position: relative;
     margin-top: 50px;
     text-shadow: 0.1em 0.1em 0.2em white;  
-
 }
 .content-box-text{
-
     font-size: 50px  ;
     padding:0;
     justify-content: space-around;
-    text-align: center; 
-    
+    text-align: center;   
 }    
-    
 .menu a{
     padding: 10px;
     color: white;
-    
 }
 .menu a:hover{
     color: grey;
@@ -69,21 +58,14 @@ body {
     text-decoration: none;
     font-size: 20px;
     background-color:#15334F;
-    
-    
-
 }
-
  .section1{
-
     background-color:#1C1C1C ;
     height: 1200px auto;
     flex-direction: column;
     width: 1600px auto;
     margin-left: 120px;
-
 }
-
 .filmes-content{
     height:100%;
     position: fixed ;
@@ -99,10 +81,7 @@ body {
     border-right: 1;
     border-style: solid;
     background-color: #0C152A;
-    
-   
 }
-
 .categor-filmes{
     position: relative;
     text-align:left;
@@ -111,42 +90,27 @@ body {
     padding-left: 2px;
     margin: auto;    
 }
-
 .categor-filmes tr  {
-    height: 50px ;
-    
-    
-    
+    height: 50px ; 
 }
-
-
-
 .categor-filmes a{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    font-size: 20px;
-    
+    font-size: 18px;
 }
 .categor-filmes a:hover{
-    color: gray;
-    
+    color: gray; 
 }
 .link-imagem1{
-
     width: 220px;
     height: 300px;
     padding: 10px;
     position: relative;
     margin-top: 50px;
     margin-left: 65px;
-    margin-bottom: 50px;
-    
-
+    margin-bottom: 50px;  
 }
-
-
-
 .corpo {
     display:flex;
     flex-direction: column; /* as DIVs Conteudo1, Conteudo2 e Conteudo3 ficarão 
@@ -155,14 +119,11 @@ body {
     Conteudo3, não caiba em uma linha, vai automaticamente para a próxima. Para uso 
     em dispositivos de tela grande. */
 }
-
 .titulo-type{
-
     height: 30px;
     width: 100%;
     background-color: #1C1C1C;
     border-style: solid;
-    
     border-left: 0;
     border-right: 0;
     border-width: 1px;
@@ -177,11 +138,9 @@ body {
 .row {
     display: flex;
     flex-direction:row;
-    flex-wrap: wrap;
-    
-  }
-
-  .card {
+    flex-wrap: wrap; 
+}
+.card {
     border-radius: 5px;
     box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
     padding: 10px ;
@@ -193,9 +152,7 @@ body {
     background-color: #15334f;
     border-style: solid;
     border-color: black ;
-
-  }
-
+}
 .text{
     color: white
 }
@@ -203,44 +160,35 @@ body {
     transform: translateY(-8px);
     cursor: pointer;
   }
-   
   .card p {
     color: #a3a5ae;
     font-size: 18px;
-  }
+}
    
-  .image {
+.image {
     position: relative;
     width: 220px;
     height: 300px;
     padding: 0;
     margin:0;
-    
-   
-  }
-  
-
+  } 
 .rodape{
-
     background-color: black;
     height: 200px;
     margin-left: 120px;
     text-align: left;
     width: 1600px auto;
 }   
-
 .rodape p{
     text-align: right;
     margin-right: 50px;
     font-size: 30px;
-    
 }
 .lançamento{
     height: 420px ;
     width: 1600px auto;
     background-color: black;
-    margin-left: 120px;
-   
+    margin-left: 120px;  
 }
 .videovenon{
     position: relative;
@@ -248,11 +196,9 @@ body {
     padding: 0px;
     margin-top: 0;
     z-index: 1;
-    margin-left: 0px;
-       
+    margin-left: 0px;    
 }
 .imgvenon{
-
     position: relative;
     margin-left: 0px;
     padding-left: 10px;
@@ -260,10 +206,7 @@ body {
     padding-bottom: 0px;
     padding-right: 0;
     width: 700px;
-    
-
 }
-
 @media only screen and (min-width: 700px)
 {
     .menu {
@@ -282,9 +225,7 @@ body {
 @media only screen and ( max-width:800px)
 {   
     .content-box{
-        
         font-size: 30px;
-
     }
     .menu a{
         border: solid;
@@ -292,18 +233,15 @@ body {
         width: 100%;
         text-align: center;
     }
-    
 }
 @media only screen and ( max-width:800px)
 {
     .card .image {
-        width: 100%;
-        
+        width: 100%;   
     }
     .lançamento{
         background-size: 500px;
-    }
-    
+    } 
       
 }
 @media only screen and (min-width: 1000px)
